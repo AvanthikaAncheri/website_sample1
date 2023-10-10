@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            background-color: plum;
+        }
+        .wrapper{
+            padding: 5px;
+            margin: auto;
+            width: 80%;
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 300px 300px 300px;
+            grid-gap: 25px;
+            border-radius: 10px;
+
+        }
+        @media screen and (max-width: 480px) {
+                body{
+                    background-color: rgb(246, 246, 108);
+                }
+                .wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(246, 246, 108);
+                }
+                div{
+                    background-color: burlywood;
+                }
+                img{
+                    box-shadow: 10px 10px 10px black;
+                }
+            }
+        .demo1,.demo2,.demo3,.demo4,.demo5,.demo6,.demo7,.demo8,.demo9{
+            height: auto;
+            border-radius: 10px;
+            text-align: center;
+        }
+        img{
+            border-radius: 10px;
+        }
+        .demo1{
+
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            
+        }
+        .demo1:hover{
+            opacity: 0.7;
+        }
+        .demo2:hover{
+            opacity: 0.7;
+        }
+        .demo3:hover{
+            opacity: 0.7;
+        }
+        .demo4:hover{
+            opacity: 0.7;
+        }
+        .demo5:hover{
+            opacity: 0.7;
+        }
+        .demo6:hover{
+            opacity: 0.7;
+        }
+        .demo7:hover{
+            opacity: 0.7;
+        }
+        .demo8:hover{
+            opacity: 0.7;
+        }
+        .demo9:hover{
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="demo1"><h1>A</h1><img src="img1.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo2"><h1>B</h1><img src="img10.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo3"><h1>C</h1><img src="img2.jpeg" alt="" height="200px" width="300px"></div>
+        <div class="demo4"><h1>D</h1><img src="img2.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo5"><h1>E</h1><img src="img3.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo6"><h1>F</h1><img src="img4.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo7"><h1>G</h1><img src="img8.jpg" alt="" height="200px" width="300px"> </div>
+        <div class="demo8"><h1>H</h1><img src="img6.jpg" alt="" height="200px" width="300px"></div>
+        <div class="demo9"><h1>I</h1><img src="img9.jpg" alt="" height="200px" width="300px"></div>
+        
+    </div>
+</body>
+</html>
